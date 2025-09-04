@@ -86,7 +86,8 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 #
 # Define the function and then call it below.
 '''
-
+def sum_to(n):
+    return sum(range(1, n+1))
 
 print('Exercise 5:', sum_to(6))
 # '''
@@ -101,7 +102,8 @@ print('Exercise 5:', sum_to(6))
 #
 # Define your function and test it with different inputs.
 '''
-
+def largest(num1, num2, num3):
+    return max([num1, num2, num3])
 
 print('Exercise 6:', largest(1, 2, 3))
 # '''
@@ -139,9 +141,9 @@ print('Exercise 8:', product(2, 5, 5))
 
 # Exercise 9: Basic Calculator
 #
-# Create a function named `basic_calculator` that takes three arguments: 
-# two numbers and a string representing an operation ('add', 'subtract', 'multiply', 'divide'). 
-# Perform the provided operation on the two numbers. In operations where the order of numbers is important, 
+# Create a function named `basic_calculator` that takes three arguments:
+# two numbers and a string representing an operation ('add', 'subtract', 'multiply', 'divide').
+# Perform the provided operation on the two numbers. In operations where the order of numbers is important,
 # treat the first parameter as the first operand and the second parameter as the second operand.
 #
 # Examples:
