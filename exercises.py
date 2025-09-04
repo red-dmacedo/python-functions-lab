@@ -118,7 +118,8 @@ print('Exercise 6:', largest(1, 2, 3))
 #
 # Write your function and test its output below.
 '''
-
+def calculate_tip(bill, tip):
+    return bill * (tip / 100)
 
 print('Exercise 7:', calculate_tip(50, 20))
 # '''
@@ -134,7 +135,15 @@ print('Exercise 7:', calculate_tip(50, 20))
 #
 # Define the function and call it with different sets of numbers to test.
 '''
+def product(*args): # type1
+    result = 1
+    for a in args:
+        result *= a
+    return result
 
+import math
+def product2(*args): # type2
+  return math.prod(args)
 
 print('Exercise 8:', product(2, 5, 5))
 # '''
