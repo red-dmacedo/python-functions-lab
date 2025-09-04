@@ -63,7 +63,14 @@ print('Exercise 3:', apply_discount(100, 25))
 #
 # Define the function and then call it below.
 '''
-
+def convert_temperature(temp, unit):
+    match unit.lower():
+        case 'f':
+            return (temp - 32) * 5/9
+        case 'c':
+            return (temp * 9/5) + 32
+        case _:
+            raise Exception(f"Invalid unit: {unit}")
 
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
 print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
