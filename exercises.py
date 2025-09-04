@@ -162,8 +162,19 @@ print('Exercise 8:', product(2, 5, 5))
 # basic_calculator(10, 5, 'divide') should return 2.
 #
 # Define the function and then call it below.
-'''
-
+# '''
+def basic_calculator(numA, numB, op):
+    match op:
+        case 'add':
+            return numA + numB
+        case 'subtract':
+            return numA - numB
+        case 'multiply':
+            return numA * numB
+        case 'divide':
+            return numA / numB
+        case _:
+            raise Exception(f"Invalid operation: {op}")
 
 print('Exercise 9 Result:', basic_calculator(10, 5, "subtract"))
 # '''
